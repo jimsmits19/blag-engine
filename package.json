@@ -1,0 +1,23 @@
+{
+  "name": "blag-engine",
+  "version": "0.0.0",
+  "description": "lightweight blog engine",
+  "main": "server.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jimsmits19/blag-engine.git"
+  },
+  "author": "Jim Smits",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jimsmits19/blag-engine/issues"
+  },
+  "homepage": "https://github.com/jimsmits19/blag-engine#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^1.19.3"
+  }
+}
