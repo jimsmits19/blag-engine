@@ -15,8 +15,27 @@ exports.ReadPost = function (file, out) {
     
 }
 
+function fileName (title) {
+    var replaceChars = ['/','\\','?','%','*',':','"','<','>', '.', ' '];
+    for(let i = 0; i < replaceChars.length; i++) {
+        title = title.replace(replaceChars[i],'-')
+    }
+
+    title = title.replace('---', '-');
+    title = title.replace('--', '-');
+    if (title.substring(title.length-1) == "-")
+    {
+        title = title.substring(0, title.length-1);
+    }
+
+
+    return(title);
+}
+
 exports.AddPost = function(title, text) {
 
+    title = fileName(title);
+    console.log(title)
     fileSystem.writeFile(__dirname + `/posts/${title}.txt`, text, (err) => {
             if (err) throw err;
     })
