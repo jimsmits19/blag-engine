@@ -6,4 +6,4 @@ Blog posts are just text files piped into a boilerplate html file. The title of 
 
 version 0.0.0: use express to serve html files generated from flat-files.
 version 0.0.1: Adding ability to post a post to the server.
-version 0.0.2: File names are handled.
+version 0.0.2: Post file names are handled.
